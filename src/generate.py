@@ -307,7 +307,7 @@ if __name__ == '__main__':
     echo('Output file:\t\t{}'.format(out_file))
     
     slant_file = args.slant_file
-    assert os.path.exists(args.slant_file), 'Input slant_file {} does not exist. Aborting.'.format(t1_file)
+    assert os.path.exists(args.slant_file), 'Input slant_file {} does not exist. Aborting.'.format(slant_file)
     echo('Slant file:\t\t{}'.format(slant_file))
     wml_dir = str(args.wml)
     assert os.path.exists(wml_dir), 'WML TractSeg directory {} does not exist. Aborting.'.format(wml_dir)
