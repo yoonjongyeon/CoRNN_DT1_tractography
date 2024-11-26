@@ -1,4 +1,4 @@
-# CoRNN_DT1_tractography
+# CoRNN DiffusionT1 tractography
 Enhancing clinically-feasible diffusion MRI tractography utilizing T1w-MRI and anatomical data
 
 ## Overview
