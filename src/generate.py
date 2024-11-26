@@ -281,7 +281,6 @@ if __name__ == '__main__':
     assert os.path.exists(args.t1_file), 'Input T1 file {} does not exist. Aborting.'.format(t1_file)
     echo('Input T1w-MRI file:\t\t{}'.format(t1_file))
     
-    ### Add dMRI
     dmri_file = args.dmri_file
     assert os.path.exists(args.dmri_file), 'Input dMRI file {} does not exist. Aborting.'.format(dmri_file)
     echo('Input dMRI file:\t\t{}'.format(dmri_file))
@@ -293,7 +292,6 @@ if __name__ == '__main__':
     bval_file = args.bval_file
     assert os.path.exists(args.bval_file), 'Input b-value file {} does not exist. Aborting.'.format(bval_file)
     echo('Input bval file:\t\t{}'.format(bval_file))
-    ###
 
     out_file = args.out_file
     out_dir = os.path.dirname(out_file)
