@@ -19,6 +19,11 @@ TBD
 
 Alternatively, a pre-built container can be downloaded [here](https://vanderbilt.box.com/s/j478y901vya5girtv1z13fa6ux2gqefz).
 
+
+## Preparation
+Before running a container, output from [SLANT](https://github.com/MASILab/SLANTbrainSeg) and [WM learning (WML)](https://github.com/MASILab/WM_learning_release) TractSeg segmentations are essential.
+
+
 ## Command
 
     singularity run 
