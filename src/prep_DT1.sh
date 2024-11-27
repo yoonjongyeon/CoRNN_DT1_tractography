@@ -19,7 +19,7 @@ src_dir=$CORNN_DIR/src
 
 # Generate mask:
 # - T1_mask.nii.gz
-
+export MRTRIX_NOMMAP=1
 echo "prep_DT1.sh: T1w - Computing T1 mask..."
 cmd="fslmaths $slant_file -div $slant_file -fillh $in_dir/T1_mask.nii.gz -odt int"
 [ ! -f $in_dir/T1_mask.nii.gz ] && (echo $cmd && eval $cmd) || echo "prep_DT1.sh: T1w - Output exists, skipping!"
