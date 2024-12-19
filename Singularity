@@ -113,6 +113,8 @@ From: ubuntu:22.04  # ubuntu:22.04
 
 %environment    # Set environment variables inside the container.
 
+    source /CoRNN_DT1_tractography/venv/bin/activate
+
     # MRTrix3
     export PATH="/apps/mrtrix3/bin:$PATH"
 
@@ -135,4 +137,3 @@ From: ubuntu:22.04  # ubuntu:22.04
 %runscript
 
     xvfb-run -a --server-num=$((65536+$$)) --server-args="-screen 0 1600x1280x24 -ac" bash /CoRNN_DT1_tractography/src/generate.sh "$@"
-    
